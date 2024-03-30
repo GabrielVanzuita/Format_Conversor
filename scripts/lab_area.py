@@ -5,7 +5,7 @@ import csv
 import json
 from data_processing import Data
 
-file_path_B = 'Documents/pipeline_dados/data_raw/data_B.csv'
+file_path_B = 'Documents/pipeline_dados/data_raw/data_B.csv' 
 file_path_A = 'Documents/pipeline_dados/data_raw/data_A.json'
 path_processed_data = 'Documents/pipeline_dados/data_processed/combined_data.csv'
 

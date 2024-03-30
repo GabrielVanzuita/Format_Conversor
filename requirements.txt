@@ -1,11 +1,3 @@
-O pipeline foi realizado utilizando o WSL do windows para simular um ambiente LINUX.
-O código foi desenvolvido em um ambiente virtual PYTHON (venv).
-Objetiva simular a uniformidade de versionamento dos clusters durante o desenvolvimento de um projeto.
-
-
-The pipeline was realised by using the windows WSL to simulate a linux enviroment. 
-The scripts were developed in a PYTHON venv. 
-It has as it objective to simulate the versioning uniformity amidst clusters, during a project development. 
 
 Python 3.10.12
 JUPYTER notebook (Conda, local, extesion)

@@ -6,9 +6,9 @@ class Data:
     def __init__(self, data):
         self.data = data
         self.name_columns = self._get_columns()
-        self.asset_length = self._size_linhas()
+        self.asset_length = self._size_lines()
 
-    def _size_linhas(self):
+    def _size_lines(self):
         return len(self.data)
 
     def _get_columns(self):
@@ -58,19 +58,19 @@ class Data:
         return combined_list
 
     def _transforming_table(self):
-        dados_combinados = [self.name_columns]
+        combined_data = [self.name_columns]
 
         for row in self.data:
             linha = []
             for coluna in self.name_columns:
                 linha.append(row.get(coluna, 'Indisponível'))
-            dados_combinados.append(linha)
+            combined_data.append(linha)
 
-        return dados_combinados
+        return combined_data
     
     def saving_data(self, path):
-        dados_combinados = self._transforming_table()
+        combined_data = self._transforming_table()
 
         with open(path, 'w') as file:
             writer = csv.writer(file)
-            writer.writerows(dados_combinados)
+            writer.writerows(combined_data)
